@@ -6,6 +6,7 @@ def readNums(File):
     for l in f:
         l = l[0:l.find('#')]
         data = data + [float(x) for x in l.split()]
+    f.close()
     return data
 
 def readPatterns(File, N, M):
